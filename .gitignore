@@ -1,8 +1,57 @@
+# ------------------------
+# Node.js
+# ------------------------
 node_modules/
-build/
 dist/
+build/
 coverage/
-.DS_Store
-*.log
-.env*
+
+# Package managers
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ------------------------
+# Python
+# ------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# ------------------------
+# Database
+# ------------------------
+*.sqlite3
+*.db
+agrisync_db
+
+# ------------------------
+# Environment variables
+# ------------------------
+.env
+.env.*
 !.env.example
+
+# ------------------------
+# IDE
+# ------------------------
+.vscode/
+.idea/
+
+# ------------------------
+# Operating System
+# ------------------------
+.DS_Store
+Thumbs.db
+
+# ------------------------
+# Logs
+# ------------------------
+*.log
