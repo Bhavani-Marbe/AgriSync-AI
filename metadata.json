@@ -1,0 +1,6 @@
+{
+  "name": "AgriSync AI",
+  "description": "Intelligent Farm Management Platform powered by AI and Machine Learning",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
