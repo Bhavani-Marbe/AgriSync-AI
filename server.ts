@@ -25,7 +25,7 @@ function startDjangoBackend() {
   const tryCmd = (cmd: string) => new Promise<number>((resolve) => {
     try {
       const check = spawn(cmd, ['-c', 'import django'], { stdio: 'ignore' });
-      check.on('close', (code) => resolve(code));
+      check.on('close', (code: number | null) => resolve(code ?? -1));
       check.on('error', () => resolve(-1));
     } catch (e) {
       resolve(-1);
@@ -495,7 +495,7 @@ app.get('/api/health', (req: Request, res: Response) => {
 // -------------------------------------------------------------
 // VITE OR STATIC MIDDLEWARE SETUP
 // -------------------------------------------------------------
-const PORT = 3000;
+const PORT = Number(process.env.PORT) || 3000;
 
 async function startServer() {
   if (process.env.NODE_ENV !== 'production') {
