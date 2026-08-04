@@ -1,139 +1,596 @@
-# AgriSync AI - Enterprise Smart Agriculture & Precision Farming SaaS Platform
+# 🌾 AgriSync AI
 
-[![React](https://img.shields.io/badge/React-19.0-blue.svg)](https://react.dev)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.5-blue.svg)](https://www.typescriptlang.org/)
-[![Python](https://img.shields.io/badge/Python-3.11-green.svg)](https://www.python.org/)
-[![Django REST](https://img.shields.io/badge/Django_REST-3.15-red.svg)](https://www.django-rest-framework.org/)
-[![Vite](https://img.shields.io/badge/Vite-6.0-purple.svg)](https://vitejs.dev/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-38bdf8.svg)](https://tailwindcss.com/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+<p align="center">
 
-**AgriSync AI** is a production-quality Smart Agriculture & Precision Farming SaaS platform built for farmers, agronomists, farm managers, and agricultural enterprises. It integrates Machine Learning crop yield recommendation models, Gemini 3.6 Flash computer vision for crop disease pathology, Penman-Monteith evapotranspiration irrigation modeling, APMC Mandi price tracking, role-based access control (RBAC), and automated PDF worklog generation.
+### AI-Powered Smart Agriculture Platform
 
----
+An intelligent full-stack agriculture platform that empowers farmers with AI-driven crop recommendations, disease detection, irrigation planning, weather forecasting, market intelligence, and a multilingual AI Agronomist Assistant.
 
-## 🌟 Key Platform Features
+</p>
 
-- **🌾 ML Crop Recommendation Engine**: Scikit-Learn `RandomForestClassifier` with SHAP explainable feature importance ratings, soil compatibility scoring, yield estimation, and profit projection in INR (₹) / Acre.
-- **🔬 Vision AI Plant Pathology & Disease Scanner**: Instant leaf image pathology scanning using Gemini 3.6 Flash. Provides disease identification, causal agent analysis, symptoms list, chemical/organic treatment dosages, and KVK / Extension Lab contacts.
-- **💧 Smart Evapotranspiration Irrigation**: Penman-Monteith ET₀ calculations based on soil moisture, solar radiation, temperature, and canopy stage.
-- **🌱 Soil Nutrient & Fertigation Planner**: NPK nutrient deficit analysis with stage-specific basal and top-dressing dosage schedules for Indian soil types (Black Cotton, Alluvial, Red Loam, Clay).
-- **📈 APMC Mandi Market Price Intelligence**: 5-day commodity price movement tracking across major Indian market yards (APMC Kalaburagi, Raichur, Vijayapura, Hubballi) with 30-day forecast models.
-- **🤖 Gemini 3.6 Flash AI Agronomist Assistant**: Context-aware conversational chatbot for personalized agronomy advice, fertilizer calculation, and pest control guidelines with text-to-speech support.
-- **📑 Dynamic PDF Reports Generator**: ReportLab-powered PDF generation for pathology lab audit reports, farm health logs, and market revenue projections.
-- **🔐 Enterprise Security & RBAC**: Multi-role security model tailored for Farmers, Farm Managers, Agronomists, and System Admins with JWT access/refresh token rotation.
-- **🖥️ Administrative & Telemetry Portal**: Node status monitoring, API latency telemetry, ML inference counts, and immutable security audit logs.
+<p align="center">
+
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript)
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js)
+![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql)
+![Gemini AI](https://img.shields.io/badge/Google-Gemini-blue?style=for-the-badge)
+
+</p>
 
 ---
 
-## 🏗️ Architecture & Technology Stack
+# 📖 Overview
 
-### System Topology
+AgriSync AI is a modern AI-powered smart agriculture platform designed to help farmers make data-driven decisions throughout the farming lifecycle. The platform combines Artificial Intelligence, Computer Vision, Weather Intelligence, Market Analytics, and Precision Agriculture into a unified web application.
+
+Instead of relying solely on traditional farming practices, farmers receive intelligent recommendations based on weather conditions, soil information, crop health, disease symptoms, irrigation requirements, and market trends.
+
+The project demonstrates a production-style full-stack architecture using React, Django, Node.js, and Google Gemini AI while following clean software engineering practices.
+
+---
+
+## 🌐 Live Demo
+
+🚧 Coming Soon
+
+
+## 📑 Table of Contents
+
+- [✨ Features](#-key-features)
+- [🏗 Architecture](#-high-level-system-architecture)
+- [📸 Screenshots](#-application-screenshots)
+- [🛠 Technology Stack](#-technology-stack)
+- [📂 Project Structure](#-project-structure)
+- [⚙ Installation](#-installation)
+- [🔑 Environment Variables](#-environment-variables)
+- [📡 API Overview](#-api-overview)
+- [🔒 Security](#-security)
+- [🤖 Artificial Intelligence](#-artificial-intelligence)
+- [📦 Deployment](#-deployment)
+- [🚀 Future Roadmap](#-future-roadmap)
+- [🤝 Contributing](#-contributing)
+- [👩‍💻 Author](#-author)
+
+# ✨ Key Features
+
+## 🤖 AI Agronomist Assistant
+
+- Natural language farming assistant
+- Gemini AI powered conversations
+- Crop advisory
+- Fertilizer guidance
+- Pest management suggestions
+- Multilingual-ready architecture
+
+---
+
+## 🌱 Smart Crop Recommendation
+
+- Soil analysis
+- NPK evaluation
+- Temperature suitability
+- Humidity analysis
+- Rainfall prediction
+- Crop suitability scoring
+
+---
+
+## 🦠 AI Disease Detection
+
+- Upload crop leaf images
+- AI-assisted disease identification
+- Disease confidence estimation
+- Treatment recommendations
+- Preventive farming practices
+
+---
+
+## 💧 Irrigation & Fertilizer Planning
+
+- Water requirement estimation
+- Irrigation scheduling
+- Fertigation planning
+- NPK recommendation
+- Growth stage recommendations
+
+---
+
+## 🌦 Weather Intelligence
+
+- Current weather
+- Forecast information
+- Rain alerts
+- Temperature trends
+- Farming advisories
+- Weather-based recommendations
+
+---
+
+## 📈 Market Intelligence
+
+- Commodity prices
+- Market trend visualization
+- Regional mandi support
+- Price comparison
+- Decision support
+
+---
+
+## 📊 Analytics Dashboard
+
+- Farm performance
+- Yield analytics
+- Crop statistics
+- Interactive charts
+- Farm insights
+
+---
+
+## 🔔 Smart Notifications
+
+- Weather alerts
+- Disease alerts
+- Market updates
+- Irrigation reminders
+- Farming recommendations
+
+---
+
+# 🏗 High-Level System Architecture
+
+<p align="center">
+
+<img src="docs/architecture.png" width="100%" alt="AgriSync AI Architecture"/>
+
+</p>
+
+The platform follows a modular full-stack architecture:
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                    Client Browser (React 19 SPA)                │
-└────────────────────────────────┬────────────────────────────────┘
-                                 │ HTTP / REST (Port 3000)
-                                 ▼
-┌─────────────────────────────────────────────────────────────────┐
-│              Node.js Express Gateway (server.ts)                │
-│  - Vite Server Middleware & Static Asset Delivery               │
-│  - Gemini 3.6 Flash Vision & Chatbot Proxy Handler              │
-│  - Fallback ML Rules & Diagnostic Fallback Engine               │
-└────────────────────────────────┬────────────────────────────────┘
-                                 │ Internal Proxy (/api/v1/*)
-                                 ▼
-┌─────────────────────────────────────────────────────────────────┐
-│              Django REST Framework Core (Port 8000)             │
-│  - Modular Architecture (Farms, ML, Pathology, Market, Advisory)│
-│  - Scikit-Learn Random Forest Pipeline                           │
-│  - ReportLab PDF Report Generation                              │
-│  - PostgreSQL / SQLite Database Engine                          │
-└─────────────────────────────────────────────────────────────────┘
+Farmer Portal
+      │
+      ▼
+React + TypeScript Frontend
+      │
+      ▼
+Node.js + Express API Gateway
+      │
+      ├──────────────┐
+      ▼              ▼
+Django Backend   Gemini AI
+      │              │
+      └──────┬───────┘
+             ▼
+      PostgreSQL
+      Weather API
+      Market API
 ```
 
-### Stack Specifications
+---
 
-- **Frontend**: React 19, TypeScript 5.5, Vite 6, Tailwind CSS v4, Lucide Icons, Recharts, Motion.
-- **Backend Services**: Node.js 20 Express gateway + Python 3.11 Django REST Framework 3.15.
-- **Machine Learning**: Scikit-Learn `RandomForestClassifier` (96.8% accuracy), NumPy, Pandas, Joblib.
-- **Generative AI**: `@google/genai` SDK with `gemini-3.6-flash` for multimodal leaf inspection and natural language agronomy advice.
-- **PDF Engine**: Python `reportlab` & client-side `jspdf` for document synthesis.
+# 🚀 Why AgriSync AI?
+
+- AI-powered agriculture assistance
+- Modern full-stack architecture
+- Computer Vision integration
+- Intelligent crop advisory
+- Weather-aware farming
+- Market intelligence
+- Production-style software engineering practices
+- Modular and scalable design
+- Responsive web application
+
+- # 📸 Application Screenshots
+
+> **Note:** Replace these images with screenshots from your application.
+
+## 🏠 Dashboard
+
+<p align="center">
+  <img src="docs/screenshots/dashboard.png" width="100%" alt="Dashboard">
+</p>
 
 ---
 
-## 🛠️ Installation & Setup
+## 🤖 AI Agronomist Assistant
 
-### Prerequisites
-
-- Node.js 18+ & npm 9+
-- Python 3.10+ & pip
-- (Optional) PostgreSQL & Docker
-
-### Quick Start (Development)
-
-1. **Clone repository**:
-   ```bash
-   git clone https://github.com/your-org/agrisync-ai.git
-   cd agrisync-ai
-   ```
-
-2. **Install Node dependencies**:
-   ```bash
-   npm install
-   ```
-
-3. **Install Python backend dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Run Django Database Migrations**:
-   ```bash
-   PYTHONPATH=backend python3 backend/manage.py migrate
-   ```
-
-5. **Execute Unit Test Suite**:
-   ```bash
-   PYTHONPATH=backend python3 backend/manage.py test apps.authentication.tests apps.farms.tests apps.ml_intelligence.tests apps.disease.tests apps.weather.tests apps.market.tests apps.agronomist.tests apps.smart_irrigation.tests apps.fertilizers.tests apps.notifications.tests apps.reports.tests apps.analytics.tests apps.admin_portal.tests
-   ```
-
-6. **Start Application Dev Server**:
-   ```bash
-   npm run dev
-   ```
-   Open `http://localhost:3000` in your browser.
+<p align="center">
+  <img src="docs/screenshots/ai-assistant.png" width="100%" alt="AI Assistant">
+</p>
 
 ---
 
-## 🧪 Testing & Code Quality
+## 🦠 Disease Detection
 
-### Run Frontend Linter & Type Check
+<p align="center">
+  <img src="docs/screenshots/disease-detection.png" width="100%" alt="Disease Detection">
+</p>
+
+---
+
+## 🌱 Crop Recommendation
+
+<p align="center">
+  <img src="docs/screenshots/crop-recommendation.png" width="100%" alt="Crop Recommendation">
+</p>
+
+---
+
+## 💧 Irrigation & Fertilizer Planner
+
+<p align="center">
+  <img src="docs/screenshots/irrigation.png" width="100%" alt="Irrigation">
+</p>
+
+---
+
+## 🌦 Weather Intelligence
+
+<p align="center">
+  <img src="docs/screenshots/weather.png" width="100%" alt="Weather">
+</p>
+
+---
+
+## 📈 Analytics Dashboard
+
+<p align="center">
+  <img src="docs/screenshots/analytics.png" width="100%" alt="Analytics">
+</p>
+
+---
+
+## 💹 Market Intelligence
+
+<p align="center">
+  <img src="docs/screenshots/market.png" width="100%" alt="Market">
+</p>
+
+---
+
+# 🛠 Technology Stack
+
+| Category | Technologies |
+|----------|--------------|
+| **Frontend** | React 19, TypeScript, Vite, Tailwind CSS, Recharts, Lucide Icons |
+| **Backend** | Django REST Framework, Python, Node.js, Express |
+| **Artificial Intelligence** | Google Gemini AI, Computer Vision |
+| **Database** | PostgreSQL (Production), SQLite (Development) |
+| **Authentication** | JWT Authentication |
+| **Charts & Analytics** | Recharts |
+| **Deployment** | Vercel, Render/Railway (Recommended) |
+| **Version Control** | Git, GitHub |
+
+---
+
+# 📂 Project Structure
+
+```text
+AgriSync-AI/
+│
+├── app/
+├── backend/
+│   ├── apps/
+│   ├── core/
+│   ├── manage.py
+│   └── requirements.txt
+│
+├── docs/
+│   ├── architecture.png
+│   └── screenshots/
+│
+├── src/
+│   ├── components/
+│   ├── services/
+│   ├── hooks/
+│   └── assets/
+│
+├── public/
+├── package.json
+├── server.ts
+├── docker-compose.yml
+├── .env.example
+└── README.md
+```
+
+---
+
+# ⚙️ Installation
+
+## Clone Repository
 
 ```bash
-npm run lint
+git clone https://github.com/Bhavani-Marbe/AgriSync-AI.git
+cd AgriSync-AI
 ```
 
-### Run Full Production Build
+---
+
+## Install Frontend
+
+```bash
+npm install
+```
+
+---
+
+## Install Backend
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Configure Environment
+
+Create a `.env` file in the project root.
+
+Example:
+
+```env
+GEMINI_API_KEY=your_api_key
+JWT_SECRET=your_secret_key
+DATABASE_URL=your_database_url
+APP_URL=http://localhost:3000
+```
+
+---
+
+## Start Development Server
+
+```bash
+npm run dev
+```
+
+Frontend:
+
+```
+http://localhost:3000
+```
+
+Backend:
+
+```
+http://localhost:8000
+```
+
+---
+
+# 🔑 Environment Variables
+
+| Variable | Description |
+|-----------|-------------|
+| GEMINI_API_KEY | Google Gemini AI API Key |
+| JWT_SECRET | JWT Authentication Secret |
+| DATABASE_URL | PostgreSQL/SQLite Connection |
+| APP_URL | Frontend URL |
+
+---
+
+# 🧪 Testing
+
+Run the production build:
 
 ```bash
 npm run build
 ```
 
----
+Run Django tests:
 
-## 🔐 Role-Based Access Matrix
-
-| Role | Access Scope |
-| :--- | :--- |
-| **FARMER** | My Farms, Crop Recommendation Engine, Disease Scanner, Smart Irrigation, Weather Radar, AI Agronomist, APMC Prices, PDF Reports |
-| **FARM_MANAGER** | Manager Dashboard, Farms & Laborers, Fertigation & Pumps, Field Disease Logs, Farm Yield Analytics, Worklog PDF Export |
-| **AGRONOMIST** | Agronomist Desk, Farmer Consultations, Pathology Diagnostics, Crop ML Engine, Soil & Fertigation, Outbreak Heatmaps, Agronomy Reports |
-| **ADMIN** | Platform & Security Ops, System Telemetry, Audit Logs, Farms Security Audit |
+```bash
+python backend/manage.py test
+```
 
 ---
 
-## 📜 License
+# 📊 Performance Highlights
 
-Distributed under the MIT License. See `LICENSE` for details.
+- ⚡ Fast Vite-powered frontend
+- 🤖 AI-powered crop advisory
+- 📈 Interactive analytics dashboards
+- 🌦 Weather-based recommendations
+- 🦠 Image disease detection
+- 🔐 Secure JWT authentication
+- 📱 Fully responsive UI
+
+# 📡 API Overview
+
+The backend exposes RESTful APIs through the Express Gateway and Django REST Framework.
+
+| Module | Description |
+|--------|-------------|
+| Authentication | User login, JWT authentication, role-based access control |
+| Farm Management | Create and manage farms, crops, and field information |
+| Crop Recommendation | AI-powered crop suitability prediction |
+| Disease Detection | Image-based crop disease diagnosis |
+| AI Assistant | Gemini-powered conversational agronomist |
+| Weather | Weather forecast and farming advisory |
+| Irrigation | Smart irrigation and fertilizer recommendations |
+| Market | Commodity prices and market intelligence |
+| Notifications | Smart farming alerts and reminders |
+
+---
+
+# 🔒 Security
+
+AgriSync AI follows modern backend security practices.
+
+### Authentication
+
+- JWT Authentication
+- Role-Based Access Control (RBAC)
+- Secure API routing
+- Protected backend endpoints
+
+### User Roles
+
+- 👨‍🌾 Farmer
+- 🌱 Farm Manager
+- 🧑‍🔬 Agronomist
+- 🛡 Administrator
+
+---
+
+# 🤖 Artificial Intelligence
+
+The platform integrates Google Gemini AI for intelligent farming assistance.
+
+### AI Capabilities
+
+- 🌱 Crop Recommendation
+- 🦠 Disease Detection
+- 🤖 AI Agronomist Chat
+- 🌦 Weather-based Advisory
+- 💧 Irrigation Guidance
+- 🧪 Fertilizer Recommendation
+- 📈 Market Insights
+
+---
+
+# 📦 Deployment
+
+## Recommended Deployment
+
+| Service | Platform |
+|----------|----------|
+| Frontend | Vercel |
+| Backend | Render / Railway |
+| Database | PostgreSQL |
+| AI | Google Gemini API |
+
+---
+
+## Production Checklist
+
+- [x] Responsive UI
+- [x] Modular Architecture
+- [x] JWT Authentication
+- [x] Gemini AI Integration
+- [x] Environment Variables
+- [x] API Layer
+- [x] Production Build
+- [x] GitHub Documentation
+
+---
+
+# 🚀 Future Roadmap
+
+### AI
+
+- Voice-based AI assistant
+- Regional language support
+- Offline AI recommendations
+
+### Smart Farming
+
+- IoT soil moisture sensors
+- Drone crop monitoring
+- Satellite imagery analysis
+- Yield prediction improvements
+
+### Platform
+
+- Mobile application
+- Multi-farm management
+- Real-time collaboration
+- Cloud synchronization
+
+---
+
+# 📸 Project Highlights
+
+✔ Modern Full-Stack Architecture
+
+✔ AI-Powered Agriculture Platform
+
+✔ Computer Vision Disease Detection
+
+✔ Smart Irrigation Planner
+
+✔ Weather Intelligence
+
+✔ Market Analytics
+
+✔ Interactive Dashboard
+
+✔ Enterprise-ready Modular Design
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+If you'd like to improve AgriSync AI:
+
+1. Fork the repository.
+2. Create a new feature branch.
+
+```bash
+git checkout -b feature/new-feature
+```
+
+3. Commit your changes.
+
+```bash
+git commit -m "Add new feature"
+```
+
+4. Push your branch.
+
+```bash
+git push origin feature/new-feature
+```
+
+5. Open a Pull Request.
+
+---
+
+# 📄 License
+
+This project is licensed under the MIT License.
+
+See the LICENSE file for more information.
+
+---
+
+# 👩‍💻 Author
+
+## Bhavani Marbe
+
+Computer Science Engineering Student
+
+Passionate about:
+
+- Artificial Intelligence
+- Full-Stack Development
+- Precision Agriculture
+- Software Engineering
+
+### Connect
+
+GitHub: https://github.com/Bhavani-Marbe
+
+---
+
+# ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
+
+It helps others discover the project and supports future development.
+
+---
+
+<p align="center">
+
+Made with ❤️ using React, Django, Node.js, Python and Google Gemini AI
+
+</p>
+- GitHub portfolio ready
+
+---
