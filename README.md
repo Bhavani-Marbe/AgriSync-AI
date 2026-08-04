@@ -199,7 +199,7 @@ Django Backend   Gemini AI
 ## 🤖 AI Agronomist Assistant
 
 <p align="center">
-  <img src="docs/screenshots/ai-assistant.png" width="100%" alt="AI Assistant">
+  <img src="docs/screenshots/ai-chatbot.png" width="100%" alt="AI Assistant">
 </p>
 
 ---
@@ -207,7 +207,7 @@ Django Backend   Gemini AI
 ## 🦠 Disease Detection
 
 <p align="center">
-  <img src="docs/screenshots/disease-detection.png" width="100%" alt="Disease Detection">
+  <img src="docs/screenshots/scanner.png" width="100%" alt="Disease Detection">
 </p>
 
 ---
@@ -215,7 +215,7 @@ Django Backend   Gemini AI
 ## 🌱 Crop Recommendation
 
 <p align="center">
-  <img src="docs/screenshots/crop-recommendation.png" width="100%" alt="Crop Recommendation">
+  <img src="docs/screenshots/recommendation.png" width="100%" alt="Crop Recommendation">
 </p>
 
 ---
@@ -239,7 +239,7 @@ Django Backend   Gemini AI
 ## 📈 Analytics Dashboard
 
 <p align="center">
-  <img src="docs/screenshots/analytics.png" width="100%" alt="Analytics">
+  <img src="docs/screenshots/report.png" width="100%" alt="Analytics">
 </p>
 
 ---
@@ -247,7 +247,7 @@ Django Backend   Gemini AI
 ## 💹 Market Intelligence
 
 <p align="center">
-  <img src="docs/screenshots/market.png" width="100%" alt="Market">
+  <img src="docs/screenshots/mandi-prices.png" width="100%" alt="Market">
 </p>
 
 ---
